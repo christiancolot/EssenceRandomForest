@@ -3,7 +3,7 @@ This repository contains the code of Essence Random Forest, a variation of Rando
 
 
 Scikit-learn version used:
-Version: 0.20.2
+Version 0.20.2
 
 How to implement:
 1. Download Scikit-learn version 0.20.2 with source code (check https://scikit-learn.org/stable/developers/advanced_installation.html as needed)

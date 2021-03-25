@@ -11,8 +11,8 @@ How to implement:
 3. Copy paste all other files i.e. 8 files with .c, .pxd and .pxy extensions from the following github repository in the directory \scikit-learn\sklearn\tree
 4. Compile Scikit-learn following instructions given in https://scikit-learn.org/stable/developers/advanced_installation.html
 
-Call to the function:
-rf = RandomForestClassifier(random_state=123, n_jobs = 10) # no change <br /> 
+Call to the function:  
+rf = RandomForestClassifier(random_state=123, n_jobs = 10) # no change  
 rf.fit(X_train, y_train, variable_weight=vw) # vw is a vector which contains the probabilities for each feature to be selected in the same order as in the matrix X_train
 
 Note:

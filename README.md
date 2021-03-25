@@ -13,7 +13,6 @@ How to implement:
 
 Call to the function:
 rf = RandomForestClassifier(random_state=123, n_jobs = 10) # no change
-
 rf.fit(X_train, y_train, variable_weight=vw) # vw is a vector which contains the probabilities for each feature to be selected in the same order as in the matrix X_train
 
 Note:

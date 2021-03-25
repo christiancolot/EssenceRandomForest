@@ -38,7 +38,7 @@ Single and multi-output problems are both handled.
 #          Fares Hedayati <fares.hedayati@gmail.com>
 #
 # License: BSD 3 clause
-# Adaptation: modification by Christian Colot <chr_colot@hotmail.com> 25/03/2021 Add variable_weight for RandomForestClassifier to be able to perform Essence Random Forest
+# Update: modification by Christian Colot <chr_colot@hotmail.com> 25/03/2021 Add variable_weight for RandomForestClassifier to be able to perform Essence Random Forest
 
 
 from warnings import catch_warnings, simplefilter, warn
@@ -234,6 +234,9 @@ class BaseForest(BaseEnsemble, metaclass=ABCMeta):
             ignored while searching for a split in each node. In the case of
             classification, splits are also ignored if they would result in any
             single class carrying a negative weight in either child node.
+		
+		variable_weight : vector like, shape = [n_features] 
+		    Contains the probability of each feature to be selected to split a node during tree building
 
         Returns
         -------
@@ -2027,3 +2030,4 @@ class RandomTreesEmbedding(BaseForest):
         """
         check_is_fitted(self, 'one_hot_encoder_')
         return self.one_hot_encoder_.transform(self.apply(X))
+

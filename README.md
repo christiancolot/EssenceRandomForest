@@ -12,8 +12,8 @@ How to implement:
 4. Compile Scikit-learn following instructions given in https://scikit-learn.org/stable/developers/advanced_installation.html
 
 Call to the function:  
-`<addr>` rf = RandomForestClassifier(random_state=123, n_jobs = 10) # no change  
-rf.fit(X_train, y_train, variable_weight=vw) # vw is a vector which contains the probabilities for each feature to be selected in the same order as <br />
+    rf = RandomForestClassifier(random_state=123, n_jobs = 10) # no change  
+    rf.fit(X_train, y_train, variable_weight=vw) # vw is a vector which contains the probabilities for each feature to be selected in the same order as <br />
                                              # in the matrix X_train
 
 Note:<br />

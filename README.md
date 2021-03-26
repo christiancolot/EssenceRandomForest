@@ -13,8 +13,8 @@ How to implement:
 
 Call to the function:  
 rf = RandomForestClassifier(random_state=123, n_jobs = 10) # no change  
-rf.fit(X_train, y_train, variable_weight=vw) # vw is a vector which contains the probabilities for each feature to be selected in the same order as  
-                                             # in the matrix X_train
+rf.fit(X_train, y_train, variable_weight=vw) # vw is a vector which contains the probabilities for each feature to be selected 
+                                             # in the same order as in the matrix X_train
 
 Note:<br />
 The choice of the algorithm to define the specific weight of features is left to the choice of the user and is consequently not part of this implementation. In the article defined above, the algorithm Varclus is used to find clusters of correlated features and the probability of a feature for being selected in Essence Random Forest = 1/(number of clusters*number of features in the cluster).
